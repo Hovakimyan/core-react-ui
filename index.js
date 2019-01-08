@@ -1,3 +1,9 @@
-exports.printMsg = function() {
-    console.log("This is a message from the demo package");
+import React from 'react'
+
+class Text extends React.PureComponent {
+    render() {
+        return <div>{this.props.children}</div>
+    }
 }
+
+export default Text;
