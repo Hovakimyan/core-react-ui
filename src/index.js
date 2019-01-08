@@ -1,9 +1,9 @@
-import React from 'react'
+import Text from './components/text';
 
-class Text extends React.PureComponent {
-    render() {
-        return <div>{this.props.children}</div>
-    }
-}
+export {
+    Text,
+};
 
-export default Text;
+export default {
+    Text,
+};

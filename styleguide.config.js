@@ -5,7 +5,7 @@ const PATHS = {
 };
 
 module.exports = {
-    title: 'Components Core Documentation',
+    title: 'Documentation for core components',
     defaultExample: true,
     exampleMode: 'expand',
     usageMode: 'expand',
@@ -14,8 +14,7 @@ module.exports = {
         {
             name: 'Core Components',
             components: () => [
-                './src/TextField.js',
-                './src/Checkbox.js',
+                './src/components/text/index.js',
             ],
             styles: {
                 StyleGuide: {
