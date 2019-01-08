@@ -11,6 +11,7 @@
   "scripts": {
     "build": "export SASS_PATH=./node_modules; webpack",
     "test": "export BABEL_ENV=test; jest --config=jest.config.json",
+    "start": "npx styleguidist server",
     "styleguidist": "npx styleguidist server",
     "styleguidist:build": "npx styleguidist build",
     "styleguidist:deploy": "npm run styleguidist:build; sleep 2; gh-pages -d styleguide -e dist",
