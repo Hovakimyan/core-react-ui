@@ -1,6 +1,6 @@
 {
   "name": "core-react-ui",
-  "version": "1.0.5",
+  "version": "1.0.51",
   "homepage": "https://github.com/Hovakimyan/core-react-ui#readme",
   "description": "React components",
   "main": "dist/index.js",
