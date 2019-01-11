@@ -10,6 +10,14 @@ module.exports = {
         libraryTarget: 'commonjs2',
     },
     devtool: 'source-map',
+    resolve: {
+        alias: {
+            components: path.resolve(__dirname, 'src/components/'),
+            atoms: path.resolve(__dirname, 'src/components/atoms/'),
+            molecules: path.resolve(__dirname, 'src/components/molecules/'),
+            organism: path.resolve(__dirname, 'src/components/organism/'),
+        },
+    },
     module: {
         rules: [
             {
