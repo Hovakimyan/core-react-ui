@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Text extends React.PureComponent {
+class Card extends React.PureComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
     };
@@ -11,4 +11,4 @@ class Text extends React.PureComponent {
     }
 }
 
-export default Text;
+export default Card;

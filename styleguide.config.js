@@ -38,6 +38,10 @@ module.exports = {
     },
     sections: [
         {
+            name: 'Introduction',
+            content: 'docs/introduction.md'
+        },
+        {
             name: 'Atoms',
             components: './src/components/atoms/*/index.js',
             styles: {
