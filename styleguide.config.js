@@ -10,6 +10,7 @@ module.exports = {
     exampleMode: 'expand',
     usageMode: 'expand',
     pagePerSection: true,
+    serverPort: 3000,
     theme: {
         baseBackground: '#fdfdfc',
         link: '#274e75',
