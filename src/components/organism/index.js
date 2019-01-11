@@ -1,4 +1,4 @@
-import Text from './components/text';
+import Text from 'organism/card';
 
 export {
     Text,
