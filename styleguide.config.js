@@ -10,12 +10,63 @@ module.exports = {
     exampleMode: 'expand',
     usageMode: 'expand',
     pagePerSection: true,
+    serverPort: 3000,
+    theme: {
+        baseBackground: '#fdfdfc',
+        link: '#274e75',
+        linkHover: '#90a7bf',
+        border: '#e0d2de',
+        font: ['Helvetica', 'sans-serif'],
+    },
+    styles: {
+        Playground: {
+            preview: {
+                paddingLeft: 0,
+                paddingRight: 0,
+                borderWidth: [[0, 0, 1, 0]],
+                borderRadius: 0,
+            },
+        },
+        Markdown: {
+            pre: {
+                border: 0,
+                background: 'none',
+            },
+            code: {
+                fontSize: 14,
+            },
+        },
+    },
     sections: [
         {
-            name: 'Core Components',
-            components: () => [
-                './src/components/text/index.js',
-            ],
+            name: 'Introduction',
+            content: 'docs/introduction.md'
+        },
+        {
+            name: 'Atoms',
+            components: './src/components/atoms/*/index.js',
+            styles: {
+                StyleGuide: {
+                    '@global body': {
+                        fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+                    },
+                },
+            },
+        },
+        {
+            name: 'Molecules',
+            components: './src/components/molecules/*/index.js',
+            styles: {
+                StyleGuide: {
+                    '@global body': {
+                        fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+                    },
+                },
+            },
+        },
+        {
+            name: 'Organism',
+            components: './src/components/organism/*/index.js',
             styles: {
                 StyleGuide: {
                     '@global body': {
@@ -25,6 +76,9 @@ module.exports = {
             },
         },
     ],
+    styleguideComponents: {
+        SectionsRenderer: path.join(__dirname, 'src/styleguide/components/section'),
+    },
     webpackConfig: merge(require('./webpack.config.js'), {
         devServer: {
             contentBase: PATHS.build,
