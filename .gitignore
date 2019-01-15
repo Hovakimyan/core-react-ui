@@ -9,6 +9,7 @@ build
 dist
 .rpt2_cache
 styleguide
+!src/styleguide
 
 # misc
 .DS_Store
