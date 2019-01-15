@@ -1,11 +1,11 @@
-import {PureComponent} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const styledTextField = styled.textarea`
     display: flex;
 `;
 
-export default class TextField extends PureComponent {
+export default class TextField extends React.PureComponent {
     state = {
         value: '',
     };
@@ -17,9 +17,11 @@ export default class TextField extends PureComponent {
     };
     
     render() {
-        return <styledTextField
+        return (
+            <styledTextField
                 value={this.state.value}
                 onChange={this.handleChange}
-            />;
+            />
+        );
     }
 }
