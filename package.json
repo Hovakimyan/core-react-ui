@@ -20,7 +20,6 @@
   "author": "Sergey Hovakimyan",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/core": "^3.8.2",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
