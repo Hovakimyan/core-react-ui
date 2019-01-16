@@ -1,4 +1,4 @@
 Basic Header:
-
-<Header>I am text</Header>
-```<Header>I am text</Header>```
+```js static
+  <Header>I am text</Header>
+```

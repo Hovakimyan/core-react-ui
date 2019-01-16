@@ -5,10 +5,9 @@ const StyledTextField = styled.textarea`
     display: flex;
 `;
 
-export default function TextField(props){
-    return (
-        <StyledTextField
-            {...props}
-        />
-    );
-}
+const TextField = props =>
+  <StyledTextField
+      {...props}
+  />;
+
+export default React.memo(TextField);

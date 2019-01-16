@@ -10,7 +10,7 @@ module.exports = {
     exampleMode: 'expand',
     usageMode: 'expand',
     pagePerSection: true,
-    serverPort: 3000,
+    serverPort: 3030,
     theme: {
         baseBackground: '#fdfdfc',
         link: '#274e75',
@@ -28,6 +28,7 @@ module.exports = {
             },
         },
         Markdown: {
+            defaultExample: true,
             pre: {
                 border: 0,
                 background: 'none',

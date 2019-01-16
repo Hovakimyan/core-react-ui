@@ -1,0 +1,4 @@
+Basic input:
+
+<Input />
+```<Input />```
