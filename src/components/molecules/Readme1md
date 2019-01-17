@@ -1,0 +1,18 @@
+Basic numeric field:
+```js static
+  <NumericInput />
+```
+ajksdhkdjhaskjdhakjshdkas
+
+```js
+  <NumericInput />
+```
+
+Numeric field with min/max validation:
+```js static
+  <NumericInput
+    min={10}
+    max={25}
+    errorText={"asdjlkasjdlk"}
+  />
+```
