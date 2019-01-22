@@ -16,17 +16,16 @@ class NumericInput extends React.PureComponent {
     max: Number.MAX_SAFE_INTEGER,
   };
 
-
-  /**
-   * @param {Object} propTypes
-   * @param {string} propTypes.defaultErrorMessage ['Validation not passed']- If no message was passed
-   * Component will use this one.
-   */
   static propTypes = {
+    /** minimum value  */
     min: PropTypes.number,
+    /** maximum value  */
     max: PropTypes.number,
+    /** current value  */
     value: PropTypes.number,
+    /** Value change handler function  */
     onChange: PropTypes.func,
+    /** Error message to display when validation fails */
     errorMessage: PropTypes.string,
   }
 
