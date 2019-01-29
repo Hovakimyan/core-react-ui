@@ -7,7 +7,11 @@ import { TextInput } from 'react-native';
 
 const Input = props => {
     const { children, ...customProps } = props;
-    <TextInput value={children} {...customProps} />
+    
+    <TextInput
+        value={children}
+        {...customProps}
+    />
 };
 
 export default Input;

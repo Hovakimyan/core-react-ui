@@ -21,6 +21,5 @@ const Input = props => {
     const { children, ...customProps } = props;
     <StyledInput value={children} {...customProps} />
 };
-console.log(process.env.REACT_APP_TEST_VAR);
 
 export default React.memo(Input);

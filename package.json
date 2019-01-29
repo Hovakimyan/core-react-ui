@@ -10,8 +10,10 @@
   },
   "scripts": {
     "build": "export SASS_PATH=./node_modules; webpack",
+    "build-mobile": "NODE_ENV=mobile export SASS_PATH=./node_modules; webpack",
     "test": "export BABEL_ENV=test; jest --config=jest.config.json",
     "start": "styleguidist server",
+    "start-mobile": "NODE_ENV=mobile styleguidist server",
     "styleguidist": "styleguidist server",
     "styleguidist:build": "styleguidist build",
     "styleguidist:deploy": "npm run styleguidist:build; sleep 2; gh-pages -d styleguide -e dist",
@@ -23,7 +25,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-native": "^0.57.8",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-styleguidist": "^8.0.6",
     "styled-components": "^4.1.3"
   },
