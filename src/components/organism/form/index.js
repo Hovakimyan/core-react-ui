@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../../atoms/button';
-import Section from '../../atoms/section';
-import Header from '../../molecules/header';
+import Button from 'atoms/button';
 
 class Form extends React.PureComponent {
 
